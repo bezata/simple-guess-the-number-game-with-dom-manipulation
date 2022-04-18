@@ -1,7 +1,7 @@
 'use strict';
 // Define random number//
 let sayı = Math.trunc(Math.random() * 20) + 1;
-//skor
+//score
 let skor = 5;
 //highscore//
 let yuksekSkor = 0;
