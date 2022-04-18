@@ -9,13 +9,13 @@ const displayMessage = function (message) {
   document.querySelector('.message').textContent = message;
 };
 const displayScore = function (skor) {
-  document.querySelector('.score').textContent = skor;
+  displayScore(skor);
 };
 // again button
 document.querySelector('.again').addEventListener('click', function () {
   skor = 5;
   sayı = Math.trunc(Math.random() * 20) + 1;
-  document.querySelector('.score').textContent = skor;
+  displayScore(skor);
   displayMessage('Guess the number...');
   document.querySelector('body').style.backgroundColor = '#222';
   document.querySelector('.number').style.width = '15rem';
